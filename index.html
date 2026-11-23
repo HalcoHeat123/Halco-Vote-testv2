@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="color-scheme" content="light"><title>The Halco Way — V2 Integration Test</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/><style>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="color-scheme" content="light"><title>The Halco Way — Halco Hero Voting</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/><style>
 :root{--blue:#003F7F;--orange:#FF7F00;--ink:#142235;--gray:#6b7280}*{box-sizing:border-box}body{margin:0;background:#f7f8fa;font-family:Inter,system-ui,sans-serif;color:#111827}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:default}.hidden{display:none!important}
 #landing{min-height:100vh;background:#031d3d;display:flex;flex-direction:column;align-items:center;justify-content:center}.poster{display:block;width:100%;height:auto}.launch-shell{max-width:1536px;width:100%}.cta-box{display:flex;justify-content:center;background:#031d3d;padding:12px 7% 24px}.cta{position:relative;width:min(78%,1180px);min-height:92px;padding:18px 48px;border:3px solid white;border-radius:999px;background:linear-gradient(180deg,#ff9820,#ff7c00 50%,#f05f00);font-style:italic;font-weight:900;font-size:clamp(28px,4vw,58px);color:white;text-shadow:0 3px 3px #0005;box-shadow:0 0 0 3px white,0 0 30px #ff730088}.cta::before{content:'★';color:#092846;margin-right:4%}.cta::after{content:'★';color:#092846;margin-left:4%}
 .hero{background:linear-gradient(135deg,#003F7F,#001a33 72%,#6b3600);color:white;padding:36px 20px 34px}.hero-in{max-width:600px;margin:auto}.brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700}.logo-circle{width:36px;height:36px;border-radius:50%;background:#ffffffeb;display:grid;place-items:center}.logo-circle img{height:27px;width:27px;object-fit:contain}.hero h1{font-size:32px;line-height:1.18;margin:18px 0 5px;letter-spacing:-.03em}.hero p{margin:0;opacity:.9}.nav{max-width:600px;background:white;margin:auto;display:flex;border-bottom:2px solid #e5e7eb}.nav button{border:0;background:none;padding:14px;flex:1;font-weight:700;color:#9ca3af;border-bottom:3px solid transparent}.nav button.active{color:var(--blue);border-bottom-color:var(--blue)}.content{max-width:600px;padding:22px 16px 32px;margin:auto}.muted{font-size:14px;line-height:1.55;color:#4b5563}.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;margin:14px 0}.mini{font-size:12px;color:#6b7280}.preview-banner{background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;padding:10px 13px;border-radius:9px;font-size:12px;font-weight:600;margin-bottom:16px}.switch{display:flex;gap:7px;margin:14px 0 20px}.switch button{flex:1;padding:9px;border:1px solid #cbd5e1;background:#fff;color:var(--blue);border-radius:8px;font-size:13px;font-weight:700}.switch button.selected{background:var(--blue);color:#fff;border-color:var(--blue)}label{font-size:14px;font-weight:650;color:#374151;display:block;margin:0 0 7px}input,textarea{width:100%;border:1px solid #d1d5db;border-radius:8px;padding:11px 13px;font-size:15px;outline:none;background:#fff}input:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #003f7f16}textarea{resize:vertical;min-height:84px}.field{margin:0 0 17px}.award-kicker{font-size:11px;letter-spacing:.09em;font-weight:800;color:var(--blue)}.award-heading{margin:5px 0 7px;font-size:19px}.category{border:1px solid #e4e8ed;border-radius:11px;background:#fff;padding:18px;margin-bottom:12px}.category p{margin:0 0 17px}.required{float:right;color:#a15c11;background:#fff7ed;border-radius:6px;padding:4px 7px;font-size:11px;font-weight:700}.progress-row{display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin:19px 0 8px}.progress-track{height:8px;background:#e5e7eb;overflow:hidden;border-radius:20px;margin-bottom:16px}.progress-fill{height:100%;width:0;background:var(--orange);transition:width .2s}.primary{border:none;background:var(--orange);color:#fff;border-radius:8px;padding:13px 18px;font-weight:800;font-size:15px}.blue{background:var(--blue)}.outline{background:#fff;border:1px solid #cbd5e1;border-radius:8px;padding:12px 16px;font-weight:700;color:var(--blue)}.wide{width:100%}.action-row{display:flex;gap:10px}.action-row>*{flex:1}.reason{margin-top:7px;color:#4b5563;font-size:14px;line-height:1.5}.review-item{border-bottom:1px solid #e5e7eb;padding:14px 0}.review-item:last-child{border:0}.success-icon{width:70px;height:70px;background:#ff7f0018;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;font-size:35px}.thank{text-align:center;padding:35px 15px}.thank h2{font-size:23px;margin:0 0 12px}.notice{font-size:13px;color:#9a3412;margin-top:12px}.footer{text-align:center;font-size:12px;color:#9ca3af;padding:22px}.small-link{color:var(--blue);font-size:13px;text-decoration:underline;cursor:pointer;background:none;border:0}.validation{color:#b91c1c;font-size:13px;margin:10px 0}.admin-card{padding:28px;text-align:center}.admin-card h2{margin:0 0 8px}.draft-note{background:#edf5ff;border-radius:9px;padding:13px;font-size:13px;color:#254267;margin-top:13px}@media(max-width:700px){.cta{width:92%;min-height:60px;padding:12px 8px;font-size:clamp(20px,7vw,32px)}.cta-box{padding:10px 5% 18px}.hero h1{font-size:29px}.card{padding:18px}.category{padding:15px}}
@@ -229,7 +229,7 @@ const periods={
  jan:{title:'Vote For Your Halco Hero!',month:'January 2027',categories:[...monthlyCategories]},
  feb:{title:'Vote For Your Halco Hero!',month:'February 2027',categories:[...monthlyCategories]}
 };
-const state={period:'nov',open:false,tab:'vote',step:'form',voter:'',entries:{},error:'',archive:[],sentCount:0,online:false,periodId:'2026-11',submitting:false};
+const state={period:'nov',open:false,tab:'vote',step:'form',voter:'',entries:{},error:'',archive:[],sentCount:0,online:false,periodId:'2026-11',submitting:false,pendingBallotId:null};
 let realHeroes=[]; // API returns published, photo-approved heroes only
 const demoNewHeroes=[];
 const heroMonths=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -359,30 +359,45 @@ function resetDemoMail(){demoMailSchedule=mailDefaults.map(x=>({...x}));try{loca
 function v2PeriodKey(id){return { '2026-11':'nov','2026-12':'dec','2027-01':'jan','2027-02':'feb'}[id]||'nov'}
 async function loadV2Public(){
  try {
-   const [r,h]=await Promise.all([
-     fetch(V2_API+'?action=status',{redirect:'follow',cache:'no-store'}),
-     fetch(V2_API+'?action=heroes',{redirect:'follow',cache:'no-store'})
-   ]);
-   if(!r.ok||!h.ok) throw Error('Backend HTTP error');
-   const status=await r.json(), heroData=await h.json();
-   if(!status.ok||!heroData.ok)throw Error('Backend response not OK');
-   state.online=true;state.open=Boolean(status.votingOpen);state.periodId=String(status.periodId||'2026-11');state.period=v2PeriodKey(state.periodId);
-   if(!periods[state.period])state.period='nov';
-   periods[state.period].month=state.periodId;
-   if(Array.isArray(status.awards)&&status.awards.length){
-      periods[state.period].categories=status.awards.map(a=>({id:String(a.id),name:String(a.name),desc:String(a.description||'Recognize a teammate.')}));
+   const response=await fetch(V2_API+'?action=status',{redirect:'follow',cache:'no-store'});
+   if(!response.ok)throw Error('Backend status HTTP '+response.status);
+   const status=await response.json();
+   if(!status.ok)throw Error('Backend returned an invalid voting status');
+   state.online=true;
+   state.periodId=String(status.periodId||'2026-11');
+   state.open=Boolean(status.votingOpen);
+   state.period=v2PeriodKey(state.periodId);
+   if(!periods[state.period]) {
+     const [year,month]=state.periodId.split('-').map(Number);
+     const monthName=heroMonths[month-1]||'Monthly';
+     const key='current';
+     periods[key]={title:'Vote For Your Halco Hero!',month:monthName+' '+year,categories:[...monthlyCategories]};
+     state.period=key;
    }
-   realHeroes=(Array.isArray(heroData.heroes)?heroData.heroes:[]).map((x,i)=>({
-      id:'published-'+i,name:String(x.name||''),award:String(x.award||'Halco Hero'),
-      month:String(x.month||''),year:Number(x.year)||2026,
-      story:String(x.story||''),accomplishments:String(x.accomplishments||''),photo:String(x.photoUrl||'')
-   })).filter(x=>x.name&&/^https:\/\//.test(x.photo));
-   if(el('app')&&!el('app').classList.contains('hidden'))render();
+   periods[state.period].month=(heroMonths[Number(state.periodId.slice(5))-1]||'Month')+' '+state.periodId.slice(0,4);
+   if(Array.isArray(status.awards)&&status.awards.length){
+     periods[state.period].categories=status.awards.map(a=>({id:String(a.id),name:String(a.name),desc:String(a.description||'Recognize a teammate.')}));
+   }
  } catch(error) {
    state.online=false;state.open=false;
-   if(el('app')&&!el('app').classList.contains('hidden'))render();
-   console.error('V2 API unavailable; voting kept closed',error);
+   console.error('Halco Way voting safely closed: status unavailable',error);
  }
+ if(el('app')&&!el('app').classList.contains('hidden'))render();
+ // The Wall of Heroes is optional: an unavailable photo service must not break voting.
+ try {
+   const response=await fetch(V2_API+'?action=heroes',{redirect:'follow',cache:'no-store'});
+   if(!response.ok)throw Error('Hero HTTP '+response.status);
+   const result=await response.json();
+   if(!result.ok)throw Error('Hero data unavailable');
+   realHeroes=(Array.isArray(result.heroes)?result.heroes:[]).map((x,i)=>({
+     id:'published-'+i,name:String(x.name||''),award:String(x.award||'Halco Hero'),
+     month:String(x.month||''),year:Number(x.year)||2026,
+     story:String(x.story||''),accomplishments:String(x.accomplishments||''),photo:String(x.photoUrl||'')
+   })).filter(x=>x.name&&/^https:\/\//.test(x.photo));
+ } catch(error) {
+   console.warn('Approved Heroes are not currently available',error);
+ }
+ if(el('app')&&!el('app').classList.contains('hidden'))render();
 }
 // Server-generated ID is preferred when available; client UUID identifies retry requests.
 async function confirmV2Ballot(){
@@ -390,7 +405,7 @@ async function confirmV2Ballot(){
  if(!state.online||!state.open){state.error='Voting is currently closed or the backend is unavailable.';state.step='form';render();return}
  const p=periods[state.period];
  const entries=p.categories.map(c=>({awardId:c.id,nominee:state.entries[c.id].nominee.trim(),reason:state.entries[c.id].reason.trim()}));
- const id=crypto.randomUUID();state.submitting=true;state.error='';render();
+ const id=state.pendingBallotId || (crypto.randomUUID ? crypto.randomUUID() : 'hw-'+Date.now()+'-'+Math.random().toString(36).slice(2));state.pendingBallotId=id;state.submitting=true;state.error='';render();
  try {
    // text/plain prevents a CORS preflight that Apps Script cannot answer.
    const result=await fetch(V2_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'submitBallot',ballotId:id,voter:state.voter.trim(),periodId:state.periodId,entries}),redirect:'follow'});
@@ -398,7 +413,7 @@ async function confirmV2Ballot(){
    const response=await result.json();
    if(!response.ok)throw Error(response.error||'Ballot was not accepted');
    state.receipt=response.receipt&&response.receipt.ballotId||id;
-   state.step='thanks';
+   state.step='thanks';state.pendingBallotId=null;
  } catch(err){
    state.error='Could not verify your submission. Do not submit again yet; contact the administrator with ballot ID '+id+'. '+String(err.message||err);
    state.step='form';
